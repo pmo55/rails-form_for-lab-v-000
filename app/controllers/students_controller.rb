@@ -18,11 +18,9 @@ class StudentsController < ApplicationController
     redirect_to student_path(@student)
   end
   
-  def update
+def update
     @student = Student.find(params[:id])
-    @student.update(params.require[:student])
+    @student.update(params.require(:student))
     redirect_to student_path(@student)
   end
-  
-  
 end
