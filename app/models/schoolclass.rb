@@ -1,1 +1,1 @@
-Class SchoolClass
+class SchoolClass < ActiveRecord::
