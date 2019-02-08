@@ -9,7 +9,7 @@ class SchoolClassesController < ApplicationController
   
   def edit
     @school_class = SchoolClass.find(params[:id])
-  
+  end 
  def create
     @school_class = SchoolClass.new(params.require(:school_class))
     @school_class.save
